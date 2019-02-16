@@ -1,23 +1,26 @@
 ﻿using BeatSaberCustomExit;
-using BeatSaverDownloader.Misc;
+using BeatSaverCustomExit.Settings;
 using Harmony;
 using System;
 using UnityEngine;
 
-[HarmonyPatch(typeof(MainFlowCoordinator), "HandleMainMenuViewControllerDidFinish",
-    new Type[] { typeof(MainMenuViewController), typeof(MainMenuViewController.MenuButton) })]
-class HandleMainMenuViewControllerDidFinishPatch
+namespace BeatSaberCustomExit.Patches
 {
-    public static bool Prefix(MainMenuViewController viewController, MainMenuViewController.MenuButton subMenuType)
+    [HarmonyPatch(typeof(MainFlowCoordinator), "HandleMainMenuViewControllerDidFinish",
+    new Type[] { typeof(MainMenuViewController), typeof(MainMenuViewController.MenuButton) })]
+    class HandleMainMenuViewControllerDidFinishPatch
     {
-        if (subMenuType == MainMenuViewController.MenuButton.Quit)
+        public static bool Prefix(MainMenuViewController viewController, MainMenuViewController.MenuButton subMenuType)
         {
-            if (PluginConfig.EnablePlugin)
-                MainMenuUIOverload.Instance.ShowConfirmQuitPanel();
-            else
-                Application.Quit();
-            return false;
+            if (subMenuType == MainMenuViewController.MenuButton.Quit)
+            {
+                if (PluginConfig.EnablePlugin)
+                    MainMenuUIOverload.Instance.ShowConfirmQuitPanel();
+                else
+                    Application.Quit();
+                return false;
+            }
+            return true;
         }
-        return true;
     }
 }

@@ -1,5 +1,4 @@
-﻿using BeatSaverDownloader.Misc;
-using BeatSaverDownloader.UI;
+﻿using BeatSaverCustomExit.Settings;
 using Harmony;
 using IllusionPlugin;
 using System;

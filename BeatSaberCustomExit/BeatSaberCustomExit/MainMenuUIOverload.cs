@@ -1,4 +1,4 @@
-﻿using BeatSaverDownloader.Misc;
+﻿using BeatSaverCustomExit.Settings;
 using CustomUI.BeatSaber;
 using System;
 using System.Collections;

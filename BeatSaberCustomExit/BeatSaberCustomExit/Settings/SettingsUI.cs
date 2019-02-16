@@ -3,10 +3,9 @@ using System.Linq;
 using UnityEngine;
 using CustomUI.Utilities;
 using CustomUI.MenuButton;
-using BeatSaverDownloader.Misc;
 using CustomUI.Settings;
 
-namespace BeatSaverDownloader.UI
+namespace BeatSaverCustomExit.Settings
 {
     class SettingsUI : MonoBehaviour
     {

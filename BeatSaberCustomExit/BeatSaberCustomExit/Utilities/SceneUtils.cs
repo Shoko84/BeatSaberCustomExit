@@ -1,28 +1,31 @@
 ﻿using System;
 using UnityEngine.SceneManagement;
 
-class SceneUtils
+namespace BeatSaberCustomExit.Utilities
 {
-    public static bool IsMenuScene(Scene scene)
+    class SceneUtils
     {
-        return CheckSceneByName(scene, "Menu");
-    }
-
-    public static bool IsGameScene(Scene scene)
-    {
-        return CheckSceneByName(scene, "GameCore");
-    }
-
-    private static bool CheckSceneByName(Scene scene, String sceneName)
-    {
-        try
+        public static bool IsMenuScene(Scene scene)
         {
-            return (scene.name == sceneName);
+            return CheckSceneByName(scene, "Menu");
         }
-        catch (Exception e)
+
+        public static bool IsGameScene(Scene scene)
         {
-            Console.WriteLine("Error getting " + sceneName + " scene:" + e);
+            return CheckSceneByName(scene, "GameCore");
         }
-        return false;
+
+        private static bool CheckSceneByName(Scene scene, String sceneName)
+        {
+            try
+            {
+                return (scene.name == sceneName);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error getting " + sceneName + " scene:" + e);
+            }
+            return false;
+        }
     }
 }

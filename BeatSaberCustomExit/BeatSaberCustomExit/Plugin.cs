@@ -11,7 +11,7 @@ namespace BeatSaberCustomExit
     public class Plugin : IPlugin
     {
         public string Name => "BeatSaberCustomExit";
-        public string Version => "1.0.1";
+        public string Version => "1.0.2";
 
         public void OnApplicationStart()
         {

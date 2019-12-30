@@ -1,0 +1,20 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/nike4613/ModSaber-MetadataFileSchema/master/Schema.json",
+  "author": "Shoko84",
+  "description": "Displays a panel to confirm that you really really want to exit Beat Saber.",
+  "gameVersion": "1.6.0",
+  "id": "CustomExit",
+  "name": "Custom Exit",
+  "version": "1.2.0",
+  "dependsOn": {
+    "BSIPA": "^3.13.4",
+    "BeatSaberMarkupLanguage": "^1.1.0",
+    "BS Utils": "^1.4.0",
+    "Harmony": "^1.2.0"
+  },
+  "features": [],
+  "links": {
+    "project-home": "https://github.com/Shoko84/BeatSaberCustomExit/blob/master/README.md",
+    "project-source": "https://github.com/Shoko84/BeatSaberCustomExit"
+  }
+}

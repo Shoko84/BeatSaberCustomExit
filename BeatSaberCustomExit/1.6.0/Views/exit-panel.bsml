@@ -1,0 +1,16 @@
+﻿<vertical child-control-height='false'>
+  <horizontal bg='panel-top' pad-left='10' pad-right='10' horizontal-fit='PreferredSize'>
+    <text id='header' text='Quit' align='Center' font-size='10'></text>
+  </horizontal>
+  <horizontal horizontal-fit='PreferredSize'>
+    <text id='top-text' text="" font-size='6'></text>
+  </horizontal>
+  <horizontal horizontal-fit='PreferredSize'>
+    <vertical pad-right='5' vertical-fit='PreferredSize'>
+      <button id='cancel-btn' text='Cancel' on-click='cancel-btn-click'></button>
+    </vertical>
+    <vertical pad-left='4' vertical-fit='PreferredSize'>
+      <button id='confirm-btn' text='Quit' on-click='confirm-btn-click'></button>
+    </vertical>
+  </horizontal>
+</vertical>

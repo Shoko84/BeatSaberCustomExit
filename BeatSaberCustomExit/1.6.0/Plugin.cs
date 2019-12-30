@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Reflection;
+using BeatSaberMarkupLanguage;
 using CustomExit.Controllers;
 using CustomExit.Utilities;
 using BeatSaberMarkupLanguage.Settings;
@@ -26,7 +29,7 @@ namespace CustomExit
         internal static IConfigProvider   configProvider;
 
         public string Name    => "Custom Exit";
-        public string Version => "1.2.1";
+        public string Version => "1.2.2";
 
         private HarmonyInstance _harmony;
 

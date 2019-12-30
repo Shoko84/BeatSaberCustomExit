@@ -26,7 +26,7 @@ namespace CustomExit
         internal static IConfigProvider   configProvider;
 
         public string Name    => "Custom Exit";
-        public string Version => "1.2.0";
+        public string Version => "1.2.1";
 
         private HarmonyInstance _harmony;
 

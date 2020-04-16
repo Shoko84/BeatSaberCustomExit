@@ -1,0 +1,7 @@
+﻿<scrollable-settings-container>
+  <bool-setting text='Enabled' value='enabled-bool' hover-hint='Enable or not the plugin'></bool-setting>
+  <bool-setting text='Confirm on quit' value='confirm-quit-bool' hover-hint='Show the dialog when quitting'></bool-setting>
+  <bool-setting text='Confirm on restart' value='confirm-restart-bool' hover-hint='Show the dialog when restarting'></bool-setting>
+  <string-setting text='Quit text content' value='quit-text-content-string' hover-hint='Text written on the dialog opened when quitting (RichText compatible)'></string-setting>
+  <string-setting text='Restart text content' value='restart-text-content-string' hover-hint='Text written on the dialog opened when restarting (RichText compatible)'></string-setting>
+</scrollable-settings-container>

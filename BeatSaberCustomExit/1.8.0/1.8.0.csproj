@@ -111,6 +111,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "CustomExit.dll" "D:\Program Files\Steam\steamapps\common\Beat Saber\Plugins"</PostBuildEvent>
+    <PostBuildEvent>copy "CustomExit.dll" "$(BeatSaber)\Plugins"</PostBuildEvent>
   </PropertyGroup>
 </Project>
